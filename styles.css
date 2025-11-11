@@ -1,0 +1,142 @@
+/* Este es tu archivo CSS.
+  Todo el código que estaba dentro de las etiquetas <style>
+  se mueve aquí, sin las etiquetas <style>.
+*/
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    overflow: hidden; /* Para contener los bordes redondeados */
+}
+
+/* --- Encabezado Principal del CV --- */
+.cv-header {
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #0056b3; /* Un toque de color profesional */
+    text-align: center;
+}
+.cv-header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    color: #222;
+}
+.cv-header .job-title {
+    font-size: 1.4em;
+    color: #0056b3;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/* --- Contenido Principal (donde van los MFEs) --- */
+.cv-content {
+    padding: 20px 40px 40px 40px;
+}
+
+/* --- Estilo para CADA sección (Micro-Frontend) ---
+ Cada MFE cargado tendrá este estilo base.
+*/
+.mfe-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.mfe-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.mfe-section h2 {
+    font-size: 1.8em;
+    color: #0056b3;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+/* --- Estilos de contenido dentro de los MFEs --- */
+.mfe-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.mfe-section li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+/* Viñeta personalizada para listas */
+.mfe-section li::before {
+    content: '•';
+    color: #0056b3;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
+.mfe-section p {
+    margin-bottom: 15px;
+}
+
+/* Estilos para "Experiencia" y "Educación" */
+.entry {
+    margin-bottom: 20px;
+}
+.entry h3 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #333;
+}
+.entry .sub-header {
+    font-size: 1em;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 8px;
+}
+.entry .sub-header .date {
+    float: right;
+    font-style: normal;
+    font-weight: 600;
+}
+.entry ul {
+    margin-top: 10px;
+    padding-left: 5px; /* Menos padding para listas anidadas */
+}
+.entry li {
+    font-size: 0.95em;
+}
+
+/* Estilos para "Habilidades" */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 0;
+    list-style: none;
+}
+.skills-list li {
+    background-color: #e7f0f8;
+    color: #004a99;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+/* Reset de viñeta para la lista de skills */
+.skills-list li::before {
+    content: none;
+}

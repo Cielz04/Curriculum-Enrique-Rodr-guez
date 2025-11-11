@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Tu Nombre</title>
+    
+    <!-- 
+      CÓMO Y PORQUÉ:
+      Aquí es donde vinculamos nuestra hoja de estilos externa.
+      'rel="stylesheet"' le dice al navegador que es un archivo CSS.
+      'href="styles.css"' le dice dónde encontrarlo.
+      Esto va en el <head> para que los estilos se carguen
+      antes de que la página se muestre.
+    -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <header class="cv-header">
+            <h1>Enrique Roríguez Angulo</h1>
+            <div class="job-title">Desarrollador Web Backend</div>
+        </header>
+
+        <main class="cv-content">
+            <div id="contact-mfe"></div>
+            <div id="profile-mfe"></div>
+            <div id="experience-mfe"></div>
+            <div id="education-mfe"></div>
+            <div id="skills-mfe"></div>
+            <div id="languages-mfe"></div>
+        </main>
+    </div>
+
+    <script src="script.js" defer></script>
+    
+</body>
+</html>
