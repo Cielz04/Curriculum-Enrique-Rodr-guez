@@ -4,7 +4,7 @@ const contactMFE = `
         <h2>Información de Contacto</h2>
         <ul>
             <li><strong>Email:</strong> enrique.rodriguez246966@potros.itson.edu.mx/li>
-            <li><strong>Teléfono:</strong> +52 6441353650/li>
+            <li><strong>Teléfono:</strong> +52 6441353650</li>
             <li><strong>LinkedIn:</strong> linkedin.com/in/cielz04</li>
             <li><strong>GitHub:</strong> github.com/cielz04/li>
             <li><strong>Ubicación:</strong> Obregón, Sonora, México</li>
